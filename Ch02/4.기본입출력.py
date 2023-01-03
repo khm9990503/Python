@@ -21,8 +21,8 @@ print('Hello',end='~!!! ') #다음 출력문과 한줄로 출력
 print('Python',end=' ')
 print('Programming')
 
-#서식문자
+# 서식 문자
 print('%d년 %d월 %d일 %s요일' % (2023,1,2,'월'))
 
-#포맷문자
+# 포맷 문자
 print('{}년 {}월 {}일 {}요일'.format(2023,1,2,'월'))
