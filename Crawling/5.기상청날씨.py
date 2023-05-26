@@ -1,7 +1,7 @@
 """
-날짜 : 2023/01/17
+날짜 : 2023/01/18
 이름 : 구홍모
-내용 : 파이썬 가상브라우저 실습하기
+내용 : 파이썬 기상청날씨 실습하기
 
 
 반응형 웹을 크롤링 하기
@@ -41,12 +41,10 @@ for tr in trs:
             var.append(None)
         else:
             var.append(j.text)
-        sql = "insert into `weather` values (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,now())"
+    sql = "insert into `weather` values (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,now())"
     cur.execute(sql, var)
     conn.commit()
     
-    
-
 # 가상브라우저 종료
 print('등록 완료...')
 conn.close()
